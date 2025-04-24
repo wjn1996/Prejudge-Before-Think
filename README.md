@@ -1,7 +1,9 @@
-<div align="center" style="color:orange;font-size:30px;">
+<!-- <div align="center" style="color:orange;font-size:30px;">
  <span style="font-weight: bold">P</span>rejudge-<span style="font-weight: bold">B</span>efore-<span style="font-weight: bold">T</span>hink (<span style="font-weight: bold">PBT</span>)
-</div>
+</div> -->
 <div align="center">
+<img src="./images/logo.png" alt="image description" style="width:100%;">
+
  👋 Hi, everyone! 
  This is the repository for o1-like reasoning, and we provide the first attemptation for reasoning with prejudge-before-think mode.
 </div>
@@ -29,7 +31,9 @@ We introduce a new thought mode named **process prejudge**, which is defined as 
 
 Prejudge, like people wait before think, which is defined as prior consideration or judgment about what is about to happen in the subsequence reasoning steps.
 
-<center><img src="./images/prejudge.png" alt="image description" style="width:400px;"></center>
+<div align="center">
+<img src="./images/prejudge.png" alt="image description" style="width:400px;">
+</div>
 
 > In the real world, this capability aims to help people learn from past experiences and improve the accuracy of each thinking step when solving similar problems in the future. Take a vivid example illustrated in Figure, when driving a vehicle and reaching the entrance of a curve close to a cliff, an experienced driver will slow down in advance. This is a prejudge action based on the experience that the vehicle will fall off the cliff due to inertia.
 
@@ -91,7 +95,9 @@ SAVE_PATH=$MAIN_DIR/data/math/sampled/$BOOTSTRAP_METHOD/$MODEL_VERSION # [saving
 
 In details, the pipeline of the dynamic tree searching is shown in the following:
 
-<center><img src="./images/tree_cot.png" alt="image description" style="width:100%;"></center>
+<div align="center">
+<img src="./images/tree_cot.png" alt="image description" style="width:100%;">
+</div>
 
 In default, at each step (split by "\n\n"), the LLM will generate at least $N$ new path. If you want to get at most 6 steps, you can set ```MODEL_VERSION=6```, where the last step contains the rest reasoning rationale proceeding "\<EOS\>".
 
@@ -125,7 +131,9 @@ Comming soon.
 
 We choose Qwen2.5-7B / 32B to perform SFT training, the results are exhibited in the following: 
 
-<center><img src="./images/results.png" alt="image description" style="width:100%;"></center>
+<div align="center">
+<img src="./images/results.png" alt="image description" style="width:100%;">
+</div>
 
 
 ### Case Show
@@ -133,11 +141,18 @@ We choose Qwen2.5-7B / 32B to perform SFT training, the results are exhibited in
 <details>
   <summary>click here to show case</summary>
 
-<center><img src="./images/case1_1.png" alt="image description" style="width:100%;"></center>
+<div align="center">
+<img src="./images/case1_1.png" alt="image description" style="width:100%;">
+</div>
 
-<center><img src="./images/case1_2.png" alt="image description" style="width:100%;"></center>
+<div align="center">
+<img src="./images/case1_2.png" alt="image description" style="width:100%;">
+</div>
 
-<center><img src="./images/case1_3.png" alt="image description" style="width:100%;"></center>
+<div align="center">
+<img src="./images/case1_3.png" alt="image description" style="width:100%;">
+</div>
+
 </details>
 
 
